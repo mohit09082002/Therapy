@@ -1,0 +1,173 @@
+## How to Run the Therapist Discovery Platform (Enhanced Version)
+
+### Prerequisites
+- Python 3.7+ installed
+- Node.js 14+ and npm installed
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+
+### Step 1: Extract and Navigate
+1. Extract the ZIP file to your desired location
+2. Open terminal/command prompt
+3. Navigate to the project directory:
+   ```
+   cd project-root
+   ```
+
+### Step 2: Set Up Backend (Flask API)
+1. Navigate to backend directory:
+   ```
+   cd backend
+   ```
+
+2. Install Python dependencies:
+   ```
+   pip install Flask Flask-CORS
+   ```
+   
+   Or if using pip3:
+   ```
+   pip3 install Flask Flask-CORS
+   ```
+
+3. Start the Flask server:
+   ```
+   python app.py
+   ```
+   
+   Or if using python3:
+   ```
+   python3 app.py
+   ```
+
+4. You should see:
+   ```
+   * Running on http://0.0.0.0:8050
+   * Debug mode: on
+   ```
+
+5. Keep this terminal window open - the backend is now running on port 8050
+
+### Step 3: Set Up Frontend (React App)
+1. Open a NEW terminal window
+2. Navigate to frontend directory:
+   ```
+   cd project-root/frontend
+   ```
+
+3. Install Node.js dependencies:
+   ```
+   npm install
+   ```
+
+4. Start the React development server:
+   ```
+   npm start
+   ```
+
+5. The browser should automatically open to http://localhost:3000
+   If not, manually navigate to: http://localhost:3000
+
+### Step 4: Test the Enhanced Features
+
+#### New Registration Flow:
+1. On the homepage, click "Create Account"
+2. Select your role (Parent Currently Dealing, Parent Solved, or Therapist)
+3. Fill in the registration form with:
+   - Full Name
+   - Email Address
+   - Phone Number
+   - Child's Condition (for parents)
+4. Submit the form - you'll be automatically logged in
+5. Check `backend/registrations.csv` to see your data was saved
+
+#### Enhanced UI Features:
+1. **Theme Toggle**: Click the theme button in the top-right corner
+2. **Testimonials**: View the rotating testimonials on the login page
+3. **Gradient Design**: Notice the beautiful purple gradients throughout
+4. **Smooth Animations**: Hover over cards and buttons to see effects
+5. **Responsive Design**: Resize your browser to test mobile layout
+
+#### Existing Features:
+1. **Directory**: Search therapists by city, pincode, or disorder
+2. **Community**: Post in "Currently Dealing" or "Already Solved" categories
+3. **Chatbot**: View the enhanced placeholder with future features
+
+### Step 5: Data Files
+
+The application uses several data files:
+
+#### Frontend Data:
+- `frontend/data/therapists.json` - Sample therapist profiles
+- `frontend/data/community.json` - Sample community posts
+
+#### Backend Data:
+- `backend/registrations.csv` - User registration data (auto-created)
+- `backend/therapists_upload.csv` - Template for bulk therapist uploads
+- `backend/chatbot_flow.json` - Chatbot conversation flows
+
+### Troubleshooting
+
+#### Backend Issues:
+- **Port 8050 already in use**: Kill existing processes or change port in app.py
+- **Module not found**: Ensure Flask and Flask-CORS are installed
+- **Permission denied**: Try using `sudo` on Linux/Mac
+
+#### Frontend Issues:
+- **npm install fails**: Try deleting `node_modules` and `package-lock.json`, then run `npm install` again
+- **Port 3000 in use**: React will offer to use a different port
+- **Blank page**: Check browser console for errors, ensure backend is running
+
+#### API Connection Issues:
+- Ensure both frontend (port 3000) and backend (port 8050) are running
+- Check browser network tab for failed API calls
+- Verify CORS is enabled in the Flask app
+
+### Features Overview
+
+#### Enhanced Authentication:
+- Login/Register split screen
+- Multi-step registration process
+- Role-based access control
+- CSV data persistence
+
+#### Modern UI/UX:
+- Purple gradient color scheme
+- Dark/light mode toggle
+- Smooth animations and transitions
+- Professional typography (Poppins font)
+- Responsive mobile design
+
+#### Core Functionality:
+- Therapist directory with advanced search
+- Community forum with sub-categories
+- WhatsApp booking integration
+- Real-time form validation
+
+### Development Notes
+
+- Backend runs on Flask development server (port 8050)
+- Frontend runs on React development server (port 3000)
+- All user data is stored locally in CSV files
+- No external database required
+- CORS is enabled for local development
+
+### Production Deployment
+
+For production deployment:
+1. Build the React app: `npm run build`
+2. Serve static files through Flask
+3. Use a production WSGI server like Gunicorn
+4. Configure proper database storage
+5. Set up SSL certificates
+
+### Support
+
+If you encounter any issues:
+1. Check that both servers are running
+2. Verify all dependencies are installed
+3. Check browser console for JavaScript errors
+4. Ensure ports 3000 and 8050 are available
+5. Try restarting both servers
+
+The application is designed to work completely offline once running, with no external API dependencies required for core functionality.
+

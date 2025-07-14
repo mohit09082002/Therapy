@@ -1,0 +1,30 @@
+{
+  "currently_dealing": [
+    {
+      "id": 1,
+      "title": "My child was just diagnosed with ADHD, feeling overwhelmed.",
+      "description": "Looking for advice and support from other parents who have gone through this. What are the first steps?",
+      "comments": [
+        {"id": 1, "author": "ParentSolved1", "text": "It gets better! Focus on finding a good therapist and support group. Early intervention is key."}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Struggling with school admissions for my child with autism.",
+      "description": "Any parents here navigated the admission process for special needs children in Delhi?",
+      "comments": []
+    }
+  ],
+  "already_solved": [
+    {
+      "id": 1,
+      "title": "Successfully integrated my child with Down Syndrome into a mainstream school.",
+      "description": "Happy to share our journey and tips on how we achieved this. It was a long process but worth it.",
+      "comments": [
+        {"id": 1, "author": "ParentDealing1", "text": "This is so inspiring! Would love to hear more about the challenges and how you overcame them."}
+      ]
+    }
+  ]
+}
+
+

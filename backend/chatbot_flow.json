@@ -1,0 +1,22 @@
+{
+  "start": {
+    "message": "Hello! How can I assist you today?",
+    "options": [
+      {"text": "Find a therapist", "next": "therapist_search"},
+      {"text": "Connect with community", "next": "community_connect"}
+    ]
+  },
+  "therapist_search": {
+    "message": "Please tell me your city or pincode.",
+    "options": []
+  },
+  "community_connect": {
+    "message": "What kind of support are you looking for?",
+    "options": [
+      {"text": "Parents dealing with similar issues", "next": "community_dealing"},
+      {"text": "Parents who have solved similar issues", "next": "community_solved"}
+    ]
+  }
+}
+
+

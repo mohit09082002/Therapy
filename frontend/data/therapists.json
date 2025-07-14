@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Priya Sharma",
+    "specialization": "Pediatric Psychologist",
+    "fee": 1500,
+    "ratings": 4.8,
+    "languages": "English Hindi",
+    "city": "Mumbai",
+    "pincode": "400001",
+    "disorder": "ADHD",
+    "whatsapp": "919876543210"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Rohan Mehta",
+    "specialization": "Occupational Therapist",
+    "fee": 1200,
+    "ratings": 4.5,
+    "languages": "English Gujarati",
+    "city": "Ahmedabad",
+    "pincode": "380001",
+    "disorder": "Autism Spectrum Disorder",
+    "whatsapp": "919988776655"
+  },
+  {
+    "id": 3,
+    "name": "Ms. Anjali Singh",
+    "specialization": "Speech Therapist",
+    "fee": 1000,
+    "ratings": 4.9,
+    "languages": "English Tamil",
+    "city": "Chennai",
+    "pincode": "600001",
+    "disorder": "Speech Delay",
+    "whatsapp": "919765432109"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Sameer Khan",
+    "specialization": "Child Psychiatrist",
+    "fee": 2000,
+    "ratings": 4.7,
+    "languages": "English Urdu",
+    "city": "Delhi",
+    "pincode": "110001",
+    "disorder": "Anxiety Disorders",
+    "whatsapp": "919654321098"
+  },
+  {
+    "id": 5,
+    "name": "Ms. Pooja Devi",
+    "specialization": "Special Educator",
+    "fee": 900,
+    "ratings": 4.6,
+    "languages": "English Kannada",
+    "city": "Bengaluru",
+    "pincode": "560001",
+    "disorder": "Learning Disabilities",
+    "whatsapp": "919543210987"
+  }
+]
